@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         
         //var dictionary = [ "Наталья": 15, "Елена" : 24, "Софія" : 38]
         
-        
+         task26(dict: [ "Наталья": 15, "Елена" : 24, "Софія" : 38],value1: "Наталья")
         
         
 
@@ -110,8 +110,9 @@ class ViewController: UIViewController {
     }
     
     func task26(dict: [String: Int], value1: String){
-        var willRemoveKey = value1
-        dict.removeValue(forKey: willRemoveKey)
+        var dict2 = dict
+        dict2[value1] = nil
+        print (dict2)
     }
 
     override func didReceiveMemoryWarning() {
